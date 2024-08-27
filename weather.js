@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
             let lon = position.coords.longitude;
             let lat = position.coords.latitude;
 
-            const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&` + `lon=${lon}&appid=${apikey}`;
+            const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&` + `lon=${lon}&appid=${apikey}`;
             console.log(url);
 
 
@@ -29,7 +29,7 @@ document.getElementById('search').addEventListener('click', () => {
     var place = document.getElementById('input').value;
     if(place!=""){
         console.log(place);
-        var urlsearch = `http://api.openweathermap.org/data/2.5/weather?q=${place}&` + `appid=${apikey}`;
+        var urlsearch = `https://api.openweathermap.org/data/2.5/weather?q=${place}&` + `appid=${apikey}`;
         console.log(urlsearch);
     
         fetch(urlsearch).then(res => {
@@ -59,7 +59,7 @@ document.getElementById("input").addEventListener("keypress", function (event) {
 
 
 function weatherReport(data) {
-    var urlcast = `http://api.openweathermap.org/data/2.5/forecast?q=${data.name}&` + `appid=${apikey}`;
+    var urlcast = `https://api.openweathermap.org/data/2.5/forecast?q=${data.name}&` + `appid=${apikey}`;
 
     fetch(urlcast).then(res => {
         return res.json()
@@ -81,7 +81,7 @@ function weatherReport(data) {
         document.getElementById('clouds').innerText = data.weather[0].description;
 
         let icon = data.weather[0].icon;
-        let iconurl = "http://api.openweathermap.org/img/w/" + icon + ".png";
+        let iconurl = "https://api.openweathermap.org/img/w/" + icon + ".png";
         console.log(iconurl);
         let myimg = document.getElementById('img');
         myimg.src = iconurl;
