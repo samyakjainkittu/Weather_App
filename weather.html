@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="icon">
+            <img src="./images/weathericon.png" alt="" srcset="" width="50px" height="50px">
+            <h1>Weather Sense.com</h1> 
+        </div>
+        <div>
+            <input type="text" name="city" id="input" placeholder="Enter The City Name">
+            <button id="search"> <i class="fa fa-search"></i> </button>
+        </div>
+    </div>
+
+    <main>
+        <div class="weather">
+            <h2 id="city">Delhi, IN</h2>
+            <div class="temp-box">
+                <img src="./images/weathericon.png" alt="" id="img">
+                <p id="temperature">26 &deg C</p>
+            </div>
+            <p id="feel">Feel like : 25 &deg C</p>
+
+            <span id="clouds">Broken Clouds </span>
+            <div class="extra">
+                <p id = "wind"> <img src="./images/wind.png" alt="" width="40px" height="40px" id = "i">  <span id="sp"> 20 km/h</span> </p>
+                <p id = "wind"> <img src="./images/humid.png" alt="" width="40px" height="40px" id = "i">  <span id="hm"> 20 %</span> </p>
+                <p id = "wind"> <img src="./images/pre.png" alt="" width="50px" height="40px" id = "i">  <span id="pr"> 1020 mBar</span> </p>
+            </div>
+
+            <div class="sun">
+
+            </div>
+
+        </div>
+
+        <div class="divider1"></div>
+
+        <div class="forecastH">
+            <p class="cast-header"> Upcomming Forecast</p>
+
+            <div class="templist">
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 &deg C / 25 &deg C</p>
+                    </div>
+                    <div class="desc">Light Rain</div>
+                </div>
+
+
+                <div class="next">
+                    <div>
+
+                        <p class="time">8:30 PM</p>
+                        <p>29 &deg C / 25 &deg C</p>
+                    </div>
+                    <div class="desc">Light Rain</div>
+                </div>
+
+
+                <div class="next">
+                    <div>
+
+                        <p class="time">8:30 PM</p>
+                        <p>29 &deg C / 25 &deg C</p>
+                    </div>
+                    <div class="desc">Light Rain</div>
+                </div>
+
+
+                <div class="next">
+                    <div>
+
+                        <p class="time">8:30 PM</p>
+                        <p>29 &deg C / 25 &deg C</p>
+                    </div>
+                    <div class="desc">Light Rain</div>
+                </div>
+
+
+                
+                <div class="next">
+                    <div>
+
+                        <p class="time">8:30 PM</p>
+                        <p>29 &deg C / 25 &deg C</p>
+                    </div>
+                    <div class="desc">Light Rain</div>
+                </div>
+            
+            </div>
+        </div>
+    </main>
+
+    <div class="forecstD">
+        <div class="divider2"></div>
+
+        <p class="cast-header"> Next 4 Day Forecast </p>
+        <div class="weekF">
+            <div class="dayF">
+                <p class="date">Sun Nov 26 2023 </p>
+                <p>31 &deg C / 25 &deg C</p>
+                <div class="desc">Overcast Clouds</div>
+            </div>
+            <div class="dayF">
+                <p class="date">Sun Nov 26 2023 </p>
+                <p>31 &deg C / 25 &deg C</p>
+                <div class="desc">Overcast Clouds</div>
+            </div>
+            <div class="dayF">
+                <p class="date">Sun Nov 26 2023 </p>
+                <p>31 &deg C / 25 &deg C</p>
+                <div class="desc">Overcast Clouds</div>
+            </div>
+            <div class="dayF">
+                <p class="date">Sun Nov 26 2023 </p>
+                <p>31 &deg C / 25 &deg C</p>
+                <div class="desc">Overcast Clouds</div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="weather.js" type="module"></script>
+
+
+
+
+
+
+</body>
+
+</html>
