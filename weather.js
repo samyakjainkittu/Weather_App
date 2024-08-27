@@ -41,6 +41,7 @@ document.getElementById('search').addEventListener('click', () => {
         })
 
     }
+    document.getElementById('input').value = '';
 })
 
 
